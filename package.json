@@ -1,0 +1,21 @@
+{
+  "name": "frutas-medicina-domestica",
+  "version": "1.0.0",
+  "description": "Site sobre frutas na medicina doméstica",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run watch-css\" \"npm run serve\"",
+    "build": "npm run build-css",
+    "watch-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "serve": "live-server --port=3000 --open=/index.html"
+  },
+  "keywords": ["medicina", "frutas", "saude", "natural"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas na Medicina Doméstica</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 50%, #f0f8f0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .loading-container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+            max-width: 400px;
+        }
+        
+        .loading-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: bounce 1s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        h1 {
+            color: #2E7D32;
+            font-size: 24px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        
+        p {
+            color: #424242;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .manual-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .manual-links p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .manual-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #2E7D32 0%, #A5D6A7 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .manual-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #2E7D32;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading-container">
+        <div class="loading-icon">🍎</div>
+        <h1>Frutas na Medicina Doméstica</h1>
+        <p>Detectando seu dispositivo...</p>
+        <div class="spinner"></div>
+        
+        <div class="manual-links">
+            <p>Ou escolha manualmente:</p>
+            <a href="mobile.html">📱 Versão Mobile</a>
+            <a href="desktop.html">💻 Versão Desktop</a>
+        </div>
+    </div>
+
+    <script>
+        function detectDevice() {
+            // Detectar se é mobile baseado em várias características
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                            window.innerWidth <= 768 ||
+                            ('ontouchstart' in window) ||
+                            (navigator.maxTouchPoints > 0);
+            
+            // Pequeno delay para mostrar a tela de loading
+            setTimeout(() => {
+                if (isMobile) {
+                    window.location.href = 'mobile.html';
+                } else {
+                    window.location.href = 'desktop.html';
+                }
+            }, 1500);
+        }
+        
+        // Executar detecção quando a página carregar
+        window.addEventListener('load', detectDevice);
+        
+        // Fallback: se não redirecionar em 3 segundos, mostrar links manuais
+        setTimeout(() => {
+            document.querySelector('.spinner').style.display = 'none';
+            document.querySelector('p').textContent = 'Escolha a versão apropriada:';
+        }, 3000);
+    </script>
+</body>
+</html>
