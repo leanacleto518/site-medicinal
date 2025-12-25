@@ -26,9 +26,95 @@
     </nav>
 </header>
 
+<!-- Carrossel de Imagens -->
+<section class="carrossel-container">
+    <div class="carrossel">
+        <div class="slide active">
+            <img src="carrosel/aviso.jpg" alt="Aviso Importante">
+            <div class="slide-overlay">
+                <h3>Informação Importante</h3>
+                <p>Nossos tratamentos são informativos e naturais</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="carrosel/banananatalina.jpg" alt="Banana Natalina">
+            <div class="slide-overlay">
+                <h3>Saúde Natural</h3>
+                <p>Tratamentos baseados em frutas e medicina natural</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="carrosel/dietabalanceada.jpg" alt="Dieta Balanceada">
+            <div class="slide-overlay">
+                <h3>Bem-estar</h3>
+                <p>Cuidados naturais para uma vida mais saudável</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="carrosel/dietatorta.jpg" alt="Informação sobre Frutas">
+            <div class="slide-overlay">
+                <h3>Frutas Medicinais</h3>
+                <p>Descubra o poder das frutas para sua saúde</p>
+            </div>
+        </div>
+        <div class="slide">
+            <a href="sobre.html">
+                <img src="carrosel/clique.jpg" alt="Conheça nosso livro - Clique aqui">
+                <div class="slide-overlay">
+                    <h3>Conheça Nosso Livro</h3>
+                    <p>Clique aqui para saber mais sobre nossa fonte de conhecimento</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Navegação do Carrossel -->
+    <button class="carrossel-nav prev" onclick="previousSlide()">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </button>
+    <button class="carrossel-nav next" onclick="nextSlide()">
+        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+    
+    <!-- Indicadores -->
+    <div class="carrossel-indicators">
+        <span class="indicator active" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+        <span class="indicator" onclick="currentSlide(4)"></span>
+        <span class="indicator" onclick="currentSlide(5)"></span>
+    </div>
+</section>
+
 <main>
+    <!-- Seção de Destaque -->
+    <section class="destaque-section">
+        <h3>🌿 Medicina Natural com Frutas</h3>
+        <p>Descubra como as frutas podem ser suas aliadas na busca por uma vida mais saudável e equilibrada. Baseado no conhecimento tradicional e validado por profissionais da saúde.</p>
+        <a href="sobre.html" class="btn-primary">Conheça Nossa História</a>
+    </section>
+
+    <!-- Cards de Benefícios -->
+    <div class="beneficios-grid">
+        <div class="beneficio-card">
+            <span class="beneficio-icon">🍎</span>
+            <h4>Tratamentos Naturais</h4>
+            <p>Aprenda a usar frutas como complemento natural para diversos sintomas, sempre com base científica e orientação profissional.</p>
+        </div>
+        <div class="beneficio-card">
+            <span class="beneficio-icon">📚</span>
+            <h4>Conhecimento Validado</h4>
+            <p>Todas as informações são baseadas no livro "As Frutas na Medicina Doméstica" de A. Balach, com depoimentos de especialistas.</p>
+        </div>
+        <div class="beneficio-card">
+            <span class="beneficio-icon">🌱</span>
+            <h4>Saúde Acessível</h4>
+            <p>Soluções simples e naturais que você pode aplicar no seu dia a dia, promovendo bem-estar de forma acessível.</p>
+        </div>
+    </div>
+
     <h2>Como você está se sentindo?</h2>
-    <p>Selecione:</p>
+    <p>Selecione o sintoma abaixo e descubra tratamentos naturais baseados em frutas:</p>
 
     <div class="sintomas">
         <button id="prev-button">
@@ -45,6 +131,39 @@
             <img src="icon/flecha.svg" alt="Próximo">
         </button>
     </div>
+
+    <!-- Nova Seção: Informações Importantes -->
+    <section class="info-importante">
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">⚕️</div>
+                <h4>Orientação Médica</h4>
+                <p>Sempre consulte um profissional de saúde antes de iniciar qualquer tratamento. Nossas informações são complementares, não substituem orientação médica.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">📖</div>
+                <h4>Fonte Confiável</h4>
+                <p>Baseado no livro "As Frutas na Medicina Doméstica" de A. Balach, com validação de nutricionistas e médicos especialistas.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🌱</div>
+                <h4>Natural e Seguro</h4>
+                <p>Tratamentos naturais com frutas, seguros quando usados adequadamente e como complemento aos cuidados médicos tradicionais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Chamada para Ação -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h3>🍎 Comece Sua Jornada de Saúde Natural</h3>
+            <p>Descubra como as frutas podem transformar sua qualidade de vida. Explore nossos tratamentos naturais e conheça a sabedoria tradicional validada pela ciência moderna.</p>
+            <div class="cta-buttons">
+                <a href="sobre.html" class="btn-primary">Conheça Nossa História</a>
+                <a href="contato.html" class="btn-secondary">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
 </main>
 </body>
 </html>
