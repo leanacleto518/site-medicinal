@@ -88,20 +88,11 @@ p {
 }
 
 /* ===== HEADER ===== */
-.header-wrapper {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-claro) 100%);
-    box-shadow: 0 2px 10px var(--sombra);
-}
-
 header {
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-claro) 100%);
     color: var(--branco);
-    padding: 0.7rem 0;
+    padding: 0.7rem 1rem;
+    box-shadow: 0 2px 10px var(--sombra);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -113,11 +104,7 @@ header {
     list-style: none;
     text-align: center;
     margin-bottom: 0.7rem;
-    padding: 0 1rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.7rem;
+    padding: 0;
 }
 
 .titulo h1 a {
@@ -136,9 +123,7 @@ header {
 .informacoes {
     display: flex;
     justify-content: center;
-    padding: 0 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0;
 }
 
 .menu-direito {
@@ -881,6 +866,10 @@ section ul li strong {
 @media (max-width: 768px) {
     header {
         padding: 0.5rem 0;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
     }
     
     .titulo {
