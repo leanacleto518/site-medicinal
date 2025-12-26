@@ -62,23 +62,23 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: var(--verde-escuro);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
@@ -152,13 +152,13 @@ header {
 .carrossel-container {
     width: 100%;
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     position: relative;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(46, 125, 50, 0.25);
+    box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
     background: var(--branco);
-    border: 3px solid rgba(165, 214, 167, 0.3);
+    border: 2px solid rgba(165, 214, 167, 0.3);
 }
 
 .carrossel {
@@ -176,7 +176,7 @@ header {
 
 .slide img {
     width: 100%;
-    height: 450px;
+    height: 300px;
     object-fit: cover;
     display: block;
     transition: all 0.5s ease;
@@ -274,8 +274,8 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(46, 125, 50, 0.9);
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    background: rgba(46, 125, 50, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -285,15 +285,15 @@ header {
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 15;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
 }
 
 .carrossel-nav:hover {
-    background: var(--verde-escuro);
+    background: rgba(46, 125, 50, 0.7);
     transform: translateY(-50%) scale(1.15);
-    box-shadow: 0 12px 35px rgba(46, 125, 50, 0.5);
-    border-color: var(--amarelo-banana);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4);
+    border-color: rgba(251, 192, 45, 0.8);
 }
 
 .carrossel-nav:active {
@@ -311,12 +311,12 @@ header {
 .carrossel-nav svg {
     width: 22px;
     height: 22px;
-    fill: white;
+    fill: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
 }
 
 .carrossel-nav:hover svg {
-    fill: var(--amarelo-banana);
+    fill: rgba(251, 192, 45, 0.95);
 }
 
 /* Overlay com informações - Melhorado */
@@ -384,7 +384,7 @@ header {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 1rem 1rem;
     position: relative;
     overflow-x: hidden;
 }
@@ -408,8 +408,8 @@ main::before {
 
 main h2 {
     color: var(--verde-escuro);
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     position: relative;
     font-weight: 700;
@@ -446,13 +446,13 @@ main h2::after {
 
 main p {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--cinza-texto);
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: 500;
 }
 
@@ -464,14 +464,14 @@ main p {
         rgba(165, 214, 167, 0.4) 50%,
         rgba(251, 192, 45, 0.1) 100%
     );
-    padding: 4rem 3rem;
-    border-radius: 30px;
-    margin: 4rem 0;
+    padding: 1.8rem 1.5rem;
+    border-radius: 20px;
+    margin: 1.5rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
     border: 2px solid rgba(46, 125, 50, 0.1);
-    box-shadow: 0 20px 60px rgba(46, 125, 50, 0.15);
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.12);
 }
 
 .destaque-section::before {
@@ -513,18 +513,18 @@ main p {
 
 .destaque-section h3 {
     color: var(--verde-escuro);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
     font-weight: 700;
     position: relative;
     z-index: 2;
 }
 
 .destaque-section p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--cinza-texto);
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
     position: relative;
     z-index: 2;
 }
@@ -532,17 +532,17 @@ main p {
 /* Cards de Benefícios - Melhorados */
 .beneficios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
-    margin: 4rem 0;
-    padding: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .beneficio-card {
     background: linear-gradient(135deg, var(--branco) 0%, rgba(248, 255, 254, 0.8) 100%);
-    padding: 2.5rem;
-    border-radius: 25px;
-    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.12);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.1);
     text-align: center;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -582,8 +582,8 @@ main p {
 }
 
 .beneficio-icon {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
     display: block;
     filter: drop-shadow(2px 2px 4px rgba(46, 125, 50, 0.2));
     animation: iconPulse 3s ease-in-out infinite;
@@ -596,15 +596,15 @@ main p {
 
 .beneficio-card h4 {
     color: var(--verde-escuro);
-    font-size: 1.4rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
     font-weight: 600;
 }
 
 .beneficio-card p {
     color: var(--cinza-texto);
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.6;
     text-align: left;
     margin: 0;
 }
@@ -614,17 +614,17 @@ main p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    margin: 4rem 0;
-    padding: 3rem;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
     background: linear-gradient(
         135deg, 
         rgba(248, 255, 254, 0.8) 0%, 
         var(--branco) 50%,
         rgba(165, 214, 167, 0.1) 100%
     );
-    border-radius: 30px;
-    box-shadow: 0 20px 60px rgba(46, 125, 50, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.12);
     position: relative;
     overflow: hidden;
     border: 2px solid rgba(165, 214, 167, 0.2);
@@ -645,7 +645,7 @@ main p {
 
 .slide-container {
     flex: 1;
-    max-width: 350px;
+    max-width: 280px;
     text-align: center;
     pointer-events: none;
     position: relative;
@@ -682,18 +682,18 @@ main p {
 
 .dores {
     width: 100%;
-    height: 280px;
+    height: 200px;
     object-fit: contain;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     transform: translateX(-50px) scale(0.9);
     cursor: pointer;
     pointer-events: auto;
     background: linear-gradient(135deg, var(--branco) 0%, rgba(248, 255, 254, 0.5) 100%);
-    padding: 20px;
-    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.15);
-    border: 3px solid rgba(165, 214, 167, 0.3);
+    padding: 12px;
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.12);
+    border: 2px solid rgba(165, 214, 167, 0.3);
 }
 
 .dores.on {
@@ -709,16 +709,16 @@ main p {
 /* ===== BOTÕES DE NAVEGAÇÃO - MELHORADOS ===== */
 #prev-button, #next-button {
     background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-claro) 100%);
-    border: 3px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.25);
     pointer-events: auto;
     position: relative;
     overflow: hidden;
@@ -751,7 +751,7 @@ main p {
 }
 
 #prev-button i, #next-button i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     transition: all 0.3s ease;
 }
@@ -763,11 +763,11 @@ main p {
 
 /* ===== SEÇÕES DE CONTEÚDO ===== */
 section {
-    margin: 3rem 0;
-    padding: 2rem;
+    margin: 1.5rem 0;
+    padding: 1.2rem;
     background: var(--branco);
-    border-radius: 15px;
-    box-shadow: 0 5px 20px var(--sombra);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--sombra);
 }
 
 section h3 {
@@ -824,21 +824,21 @@ section ul li strong {
 .btn-primary {
     background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-claro) 100%);
     color: var(--branco);
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 25px;
-    font-size: 1.1rem;
+    border-radius: 20px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 15px var(--sombra);
+    box-shadow: 0 3px 12px var(--sombra);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px var(--sombra);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--sombra);
     color: var(--branco);
 }
 
@@ -846,9 +846,9 @@ section ul li strong {
     background: var(--branco);
     color: var(--verde-escuro);
     border: 2px solid var(--verde-escuro);
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -878,7 +878,7 @@ section ul li strong {
     }
     
     .titulo h1 a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .informacoes {
@@ -898,35 +898,17 @@ section ul li strong {
         font-size: 0.85rem;
     }
     
-    .sintomas {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    #prev-button, #next-button {
-        width: 50px;
-        height: 50px;
-    }
-    
-    main {
-        padding: 2rem 1rem;
-    }
-    
-    h1 {
-        font-size: 1.6rem;
-    }
-    
-    h2 {
-        font-size: 1.6rem;
+    main h2 {
+        font-size: 1.4rem;
     }
     
     .carrossel-container {
-        margin: 1rem;
+        margin: 0.8rem;
         border-radius: 10px;
     }
     
     .slide img {
-        height: 250px;
+        height: 200px;
     }
 }
 
@@ -941,7 +923,7 @@ section ul li strong {
     }
     
     .titulo h1 a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .informacoes {
@@ -958,11 +940,11 @@ section ul li strong {
     }
     
     main h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .slide img {
-        height: 200px;
+        height: 160px;
     }
 }
 
@@ -1007,7 +989,7 @@ footer p {
 
 /* ===== SEÇÃO DE INFORMAÇÕES IMPORTANTES ===== */
 .info-importante {
-    margin: 5rem 0;
+    margin: 2rem 0;
     padding: 0;
     background: transparent;
     box-shadow: none;
@@ -1016,17 +998,17 @@ footer p {
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin: 3rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .info-card {
     background: linear-gradient(135deg, var(--branco) 0%, rgba(248, 255, 254, 0.9) 100%);
-    padding: 2.5rem;
-    border-radius: 25px;
+    padding: 1.5rem;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.12);
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -1066,23 +1048,23 @@ footer p {
 }
 
 .info-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
     display: block;
     filter: drop-shadow(2px 2px 4px rgba(46, 125, 50, 0.2));
 }
 
 .info-card h4 {
     color: var(--verde-escuro);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
     font-weight: 600;
 }
 
 .info-card p {
     color: var(--cinza-texto);
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.6;
     margin: 0;
     text-align: left;
 }
@@ -1095,13 +1077,13 @@ footer p {
         var(--verde-claro) 50%,
         rgba(165, 214, 167, 0.8) 100%
     );
-    margin: 5rem 0 3rem;
-    padding: 4rem 3rem;
-    border-radius: 30px;
+    margin: 2rem 0 1.5rem;
+    padding: 1.8rem 1.5rem;
+    border-radius: 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 25px 60px rgba(46, 125, 50, 0.3);
+    box-shadow: 0 15px 35px rgba(46, 125, 50, 0.25);
 }
 
 .cta-section::before {
@@ -1132,17 +1114,17 @@ footer p {
 
 .cta-section h3 {
     color: var(--branco);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cta-section p {
     color: rgba(255, 255, 255, 0.95);
-    font-size: 1.2rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -1185,46 +1167,92 @@ footer p {
 
 /* ===== RESPONSIVIDADE PARA NOVAS SEÇÕES ===== */
 @media (max-width: 768px) {
+    main {
+        padding: 1rem 0.8rem;
+    }
+    
     .info-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.2rem;
     }
     
     .cta-section {
-        padding: 3rem 2rem;
-        margin: 3rem 0 2rem;
+        padding: 1.5rem 1.2rem;
+        margin: 1.5rem 0 1rem;
     }
     
     .cta-section h3 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
     
     .cta-buttons .btn-primary,
     .cta-buttons .btn-secondary {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+    }
+    
+    .sintomas {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+    
+    #prev-button, #next-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .beneficios-grid {
+        gap: 1.2rem;
+        margin: 1.2rem 0;
+    }
+    
+    .beneficio-card {
+        padding: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
+    main {
+        padding: 0.8rem 0.6rem;
+    }
+    
     .info-card {
-        padding: 2rem;
+        padding: 1.2rem;
     }
     
     .info-icon {
-        font-size: 2.5rem;
-    }
-    
-    .cta-section h3 {
         font-size: 1.8rem;
     }
     
+    .cta-section h3 {
+        font-size: 1.3rem;
+    }
+    
     .cta-section p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+    }
+    
+    .beneficio-card {
+        padding: 1rem;
+    }
+    
+    .beneficio-icon {
+        font-size: 2rem;
+    }
+    
+    .slide-container {
+        max-width: 250px;
+    }
+    
+    .dores {
+        height: 160px;
+        padding: 10px;
     }
 }
