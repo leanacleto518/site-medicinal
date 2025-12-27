@@ -148,6 +148,228 @@ header {
     transform: translateY(-2px);
 }
 
+/* ===== BARRA DE PESQUISA DE SINTOMAS ===== */
+.search-container {
+    max-width: 1200px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 100;
+}
+
+.search-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input-container {
+    position: relative;
+    background: linear-gradient(135deg, var(--branco) 0%, rgba(248, 255, 254, 0.95) 100%);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.15);
+    border: 2px solid rgba(165, 214, 167, 0.3);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.search-input-container:hover {
+    box-shadow: 0 12px 35px rgba(46, 125, 50, 0.2);
+    border-color: var(--verde-claro);
+}
+
+.search-input-container:focus-within {
+    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.25);
+    border-color: var(--verde-escuro);
+    transform: translateY(-2px);
+}
+
+#symptom-search {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1.5rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.1rem;
+    color: var(--cinza-texto);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+#symptom-search::placeholder {
+    color: rgba(66, 66, 66, 0.6);
+    font-style: italic;
+}
+
+.search-icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--verde-escuro);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.search-input-container:focus-within .search-icon {
+    color: var(--verde-claro);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--branco);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.2);
+    border: 2px solid rgba(165, 214, 167, 0.2);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-results.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(165, 214, 167, 0.1);
+    text-decoration: none;
+    color: var(--cinza-texto);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background: linear-gradient(135deg, rgba(165, 214, 167, 0.1) 0%, rgba(251, 192, 45, 0.05) 100%);
+    transform: translateX(5px);
+    color: var(--verde-escuro);
+}
+
+.search-result-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--verde-claro) 0%, rgba(165, 214, 167, 0.5) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.search-result-item:hover .search-result-icon {
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-claro) 100%);
+    color: white;
+    transform: scale(1.1);
+}
+
+.search-result-text {
+    flex: 1;
+}
+
+.search-result-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    color: var(--verde-escuro);
+}
+
+.search-result-description {
+    font-size: 0.9rem;
+    color: rgba(66, 66, 66, 0.7);
+    line-height: 1.4;
+}
+
+.search-no-results {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    color: rgba(66, 66, 66, 0.6);
+    font-style: italic;
+}
+
+.search-no-results i {
+    font-size: 2rem;
+    color: var(--verde-claro);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Responsividade da Pesquisa */
+@media (max-width: 768px) {
+    .search-container {
+        padding: 0 0.8rem;
+        margin: 0.8rem auto 0;
+    }
+    
+    .search-wrapper {
+        max-width: 100%;
+    }
+    
+    #symptom-search {
+        padding: 0.8rem 2.5rem 0.8rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .search-icon {
+        right: 1.2rem;
+        font-size: 1.1rem;
+    }
+    
+    .search-result-item {
+        padding: 0.8rem 1.2rem;
+    }
+    
+    .search-result-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #symptom-search {
+        padding: 0.7rem 2.2rem 0.7rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .search-result-item {
+        padding: 0.7rem 1rem;
+    }
+    
+    .search-result-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        margin-right: 0.8rem;
+    }
+    
+    .search-result-title {
+        font-size: 0.95rem;
+    }
+    
+    .search-result-description {
+        font-size: 0.85rem;
+    }
+}
+
 /* ===== CARROSSEL ===== */
 .carrossel-container {
     width: 100%;
@@ -267,56 +489,6 @@ header {
 .indicator:hover:not(.active) {
     background: rgba(255, 255, 255, 0.9);
     transform: scale(1.15);
-}
-
-/* Navegação do Carrossel - Melhorada */
-.carrossel-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(46, 125, 50, 0.4);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 15;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
-}
-
-.carrossel-nav:hover {
-    background: rgba(46, 125, 50, 0.7);
-    transform: translateY(-50%) scale(1.15);
-    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4);
-    border-color: rgba(251, 192, 45, 0.8);
-}
-
-.carrossel-nav:active {
-    transform: translateY(-50%) scale(0.95);
-}
-
-.carrossel-nav.prev {
-    left: 25px;
-}
-
-.carrossel-nav.next {
-    right: 25px;
-}
-
-.carrossel-nav svg {
-    width: 22px;
-    height: 22px;
-    fill: rgba(255, 255, 255, 0.9);
-    transition: all 0.3s ease;
-}
-
-.carrossel-nav:hover svg {
-    fill: rgba(251, 192, 45, 0.95);
 }
 
 /* Overlay com informações - Melhorado */

@@ -511,6 +511,84 @@
             background: white;
             transform: translateY(-5px) scale(1.05);
         }
+        
+        /* Search Results Styling for Desktop */
+        .search-results.show {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+        }
+        
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            padding: 1.2rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(165, 214, 167, 0.1);
+            text-decoration: none;
+            color: #424242;
+        }
+        
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .search-result-item:hover {
+            background: linear-gradient(135deg, rgba(165, 214, 167, 0.1) 0%, rgba(251, 192, 45, 0.05) 100%);
+            transform: translateX(8px);
+            color: #2E7D32;
+        }
+        
+        .search-result-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #A5D6A7 0%, rgba(165, 214, 167, 0.5) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-result-item:hover .search-result-icon {
+            background: linear-gradient(135deg, #2E7D32 0%, #A5D6A7 100%);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .search-result-text {
+            flex: 1;
+        }
+        
+        .search-result-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: #2E7D32;
+        }
+        
+        .search-result-description {
+            font-size: 1rem;
+            color: rgba(66, 66, 66, 0.7);
+            line-height: 1.5;
+        }
+        
+        .search-no-results {
+            padding: 3rem 2rem;
+            text-align: center;
+            color: rgba(66, 66, 66, 0.6);
+            font-style: italic;
+        }
+        
+        .search-no-results i {
+            font-size: 2.5rem;
+            color: #A5D6A7;
+            margin-bottom: 1rem;
+            display: block;
+        }
     </style>
 </head>
 
@@ -531,6 +609,17 @@
 
     <!-- Conteúdo Desktop -->
     <div class="desktop-content">
+        <!-- Barra de Pesquisa de Sintomas -->
+        <section class="max-w-4xl mx-auto mb-8">
+            <div class="relative">
+                <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-full shadow-xl border-3 border-verde-claro border-opacity-30 transition-all duration-300 hover:shadow-2xl hover:border-verde-escuro focus-within:shadow-2xl focus-within:border-verde-escuro focus-within:transform focus-within:-translate-y-2">
+                    <input type="text" id="symptom-search" placeholder="Busque seu sintoma..." autocomplete="off" style="width: 100%; padding: 1.2rem 4rem 1.2rem 2rem; border: none; outline: none; background: transparent; font-size: 1.2rem; color: #424242; font-family: 'Open Sans', sans-serif; font-weight: 500; border-radius: 9999px;">
+                    <i class="bi bi-search" style="position: absolute; right: 2rem; top: 50%; transform: translateY(-50%); color: #2E7D32; font-size: 1.4rem; transition: all 0.3s ease;"></i>
+                </div>
+                <div class="search-results" id="search-results" style="position: absolute; top: 100%; left: 0; right: 0; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(46, 125, 50, 0.25); border: 2px solid rgba(165, 214, 167, 0.2); max-height: 400px; overflow-y: auto; z-index: 1000; margin-top: 0.5rem; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"></div>
+            </div>
+        </section>
+
         <!-- Carrossel Desktop -->
         <div class="desktop-carousel">
             <div class="carrossel flex transition-transform duration-700 ease-out">
@@ -552,14 +641,6 @@
                     </a>
                 </div>
             </div>
-            
-            <!-- Navegação do Carrossel -->
-            <button class="desktop-carousel-nav prev" onclick="previousSlide()">
-                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-            </button>
-            <button class="desktop-carousel-nav next" onclick="nextSlide()">
-                <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-            </button>
             
             <!-- Indicadores -->
             <div class="desktop-indicators">
