@@ -155,6 +155,9 @@ header {
     padding: 0 1rem;
     position: relative;
     z-index: 100;
+    /* Garantir visibilidade no mobile */
+    display: block !important;
+    visibility: visible !important;
 }
 
 .search-wrapper {
@@ -317,6 +320,9 @@ header {
     .search-container {
         padding: 0 0.8rem;
         margin: 0.8rem auto 0;
+        /* Forçar exibição no mobile */
+        display: block !important;
+        visibility: visible !important;
     }
     
     .search-wrapper {
@@ -326,6 +332,10 @@ header {
     #symptom-search {
         padding: 0.8rem 2.5rem 0.8rem 1.2rem;
         font-size: 1rem;
+        /* Melhorar compatibilidade mobile */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
     
     .search-icon {
@@ -342,12 +352,24 @@ header {
         height: 35px;
         font-size: 1.1rem;
     }
+    
+    /* Garantir que os botões dos sintomas sejam visíveis */
+    #prev-button, #next-button {
+        width: 45px;
+        height: 45px;
+        display: flex !important;
+        visibility: visible !important;
+    }
 }
 
 @media (max-width: 480px) {
     #symptom-search {
         padding: 0.7rem 2.2rem 0.7rem 1rem;
         font-size: 0.95rem;
+        /* Melhorar compatibilidade mobile */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
     
     .search-result-item {
@@ -367,6 +389,19 @@ header {
     
     .search-result-description {
         font-size: 0.85rem;
+    }
+    
+    /* Garantir que os botões dos sintomas sejam visíveis em telas pequenas */
+    #prev-button, #next-button {
+        width: 40px;
+        height: 40px;
+        display: flex !important;
+        visibility: visible !important;
+    }
+    
+    .sintomas {
+        gap: 1rem;
+        padding: 1rem;
     }
 }
 
@@ -894,6 +929,9 @@ main p {
     pointer-events: auto;
     position: relative;
     overflow: hidden;
+    /* Garantir visibilidade no mobile */
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 #prev-button::before, #next-button::before {

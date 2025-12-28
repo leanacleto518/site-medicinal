@@ -76,8 +76,15 @@ function initializeSearch() {
     const searchInput = document.getElementById('symptom-search');
     const searchResults = document.getElementById('search-results');
     
-    if (!searchInput || !searchResults) return;
+    if (!searchInput || !searchResults) {
+        console.log('Elementos de pesquisa não encontrados:', {
+            searchInput: !!searchInput,
+            searchResults: !!searchResults
+        });
+        return;
+    }
 
+    console.log('Inicializando pesquisa de sintomas...');
     let searchTimeout;
 
     function performSearch(query) {
@@ -195,7 +202,17 @@ function initializeSintomas() {
     const btnPrev = document.getElementById('prev-button');
     const btnNext = document.getElementById('next-button');
 
-    if (!slideImg || !slideLink || !btnPrev || !btnNext) return;
+    if (!slideImg || !slideLink || !btnPrev || !btnNext) {
+        console.log('Elementos de sintomas não encontrados:', {
+            slideImg: !!slideImg,
+            slideLink: !!slideLink,
+            btnPrev: !!btnPrev,
+            btnNext: !!btnNext
+        });
+        return;
+    }
+
+    console.log('Inicializando navegação de sintomas...');
 
     function updateSlide() {
         slideImg.classList.remove('on');
@@ -286,9 +303,21 @@ function initializeCarrossel() {
 
 // ===== INICIALIZAÇÃO ===== 
 document.addEventListener('DOMContentLoaded', function() {
+    // Garantir que os elementos existam antes de inicializar
+    console.log('Inicializando funcionalidades...');
+    
     initializeSearch();
     initializeCarrossel();
     initializeSintomas();
+    
+    // Verificar se os elementos foram criados corretamente
+    const searchInput = document.getElementById('symptom-search');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+    
+    console.log('Search input:', searchInput ? 'OK' : 'ERRO');
+    console.log('Prev button:', prevButton ? 'OK' : 'ERRO');
+    console.log('Next button:', nextButton ? 'OK' : 'ERRO');
     
     // Adicionar efeitos de entrada suaves
     const elements = document.querySelectorAll('.beneficio-card, .destaque-section');
