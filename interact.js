@@ -32,42 +32,42 @@ const symptomsDatabase = [
         name: "Dor de Garganta",
         keywords: ["garganta", "pescoço", "dor de garganta", "faringite", "amigdalite"],
         description: "Tratamento natural para dores de garganta",
-        link: "#",
+        link: "tratamentos/remedio-dor-garganta.html",
         icon: "🗣️"
     },
     {
         name: "Dor Muscular",
         keywords: ["muscular", "músculo", "dor muscular", "mialgia", "contusão"],
         description: "Alívio natural para dores musculares",
-        link: "#",
+        link: "tratamentos/remedio-dor-muscular.html",
         icon: "💪"
     },
     {
         name: "Dor nas Articulações",
         keywords: ["articulações", "juntas", "artrite", "dor nas juntas", "reumatismo"],
         description: "Tratamento natural para dores articulares",
-        link: "#",
+        link: "tratamentos/remedio-dor-articulacoes.html",
         icon: "🦴"
     },
     {
         name: "Dor nas Costas",
         keywords: ["costas", "coluna", "lombar", "dor nas costas", "lombalgia"],
         description: "Alívio natural para dores nas costas",
-        link: "#",
+        link: "tratamentos/remedio-dor-costas.html",
         icon: "🏃"
     },
     {
         name: "Dor no Coração",
         keywords: ["coração", "peito", "cardíaco", "dor no peito", "angina"],
         description: "Cuidados naturais para desconfortos cardíacos",
-        link: "#",
+        link: "tratamentos/remedio-dor-coracao.html",
         icon: "❤️"
     },
     {
         name: "Dor no Ouvido",
         keywords: ["ouvido", "orelha", "dor de ouvido", "otite", "auricular"],
         description: "Tratamento natural para dores de ouvido",
-        link: "#",
+        link: "tratamentos/remedio-dor-ouvido.html",
         icon: "👂"
     }
 ];
