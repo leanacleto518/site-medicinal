@@ -377,7 +377,7 @@
 
         <!-- Carrossel Mobile -->
         <div class="mobile-carousel">
-            <img src="carrosel/click.jpg" alt="Conheça nosso livro - Clique aqui" id="mobile-carousel-image">
+            <img src="carrosel/click.jpg" alt="Conheça nosso livro - Clique aqui" id="mobile-carousel-image" onclick="handleCarouselClick()">
         </div>
 
         <!-- Seção de Destaque -->
@@ -408,7 +408,7 @@
         </div>
 
         <!-- Seção de Sintomas -->
-        <div class="mobile-symptoms">
+        <div class="mobile-symptoms" id="sintomas-section">
             <h2>Como você está se sentindo?</h2>
             <p>Selecione o sintoma e descubra tratamentos naturais:</p>
             
@@ -476,6 +476,15 @@
         
         let currentMobileImage = 0;
         const mobileCarouselImg = document.getElementById('mobile-carousel-image');
+        
+        function handleCarouselClick() {
+            // Se for a imagem buscasitoma.jpg, redireciona para sintomas
+            if (mobileImages[currentMobileImage] === 'carrosel/buscasitoma.jpg') {
+                document.getElementById('sintomas-section').scrollIntoView({ behavior: 'smooth' });
+            } else if (mobileImages[currentMobileImage] === 'carrosel/click.jpg') {
+                window.open('https://pay.kiwify.com.br/1KjTh1L', '_blank');
+            }
+        }
         
         function changeMobileImage() {
             currentMobileImage = (currentMobileImage + 1) % mobileImages.length;
