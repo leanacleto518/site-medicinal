@@ -699,14 +699,8 @@ main p {
 }
 
 .destaque-section::after {
-    content: '🍎🍊🍌🥝🍇';
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 1.5rem;
-    opacity: 0.3;
-    animation: fruitFloat 6s ease-in-out infinite;
-    pointer-events: none;
+    content: '';
+    display: none;
 }
 
 @keyframes float {
