@@ -69,6 +69,27 @@ const symptomsDatabase = [
         description: "Tratamento natural para dores de ouvido",
         link: "tratamentos/remedio-dor-ouvido.html",
         icon: '<i class="bi bi-soundwave"></i>'
+    },
+    {
+        name: "Dor de Estômago",
+        keywords: ["estômago", "gastrite", "úlcera", "dor de estômago", "azia"],
+        description: "Tratamento natural para dores e problemas estomacais",
+        link: "tratamentos/remedio-dor-estomago.html",
+        icon: '<i class="bi bi-circle"></i>'
+    },
+    {
+        name: "Dor no Fígado",
+        keywords: ["fígado", "hepatite", "dor no fígado", "vesícula", "bile"],
+        description: "Cuidados naturais para problemas hepáticos",
+        link: "tratamentos/remedio-dor-figado.html",
+        icon: '<i class="bi bi-droplet"></i>'
+    },
+    {
+        name: "Dor no Pé",
+        keywords: ["pé", "pés", "dor no pé", "fascite", "esporão", "tornozelo"],
+        description: "Tratamento natural para dores nos pés",
+        link: "tratamentos/remedio-dor-pe.html",
+        icon: '<i class="bi bi-person-walking"></i>'
     }
 ];
 
@@ -191,6 +212,56 @@ const sintomas = [
         img: "imgsintoma/dor de dente.png",
         link: "tratamentos/remedio-dor-no-dente.html",
         alt: "Dor de dente"
+    },
+    {
+        img: "imgsintoma/dor de estômago.png",
+        link: "tratamentos/remedio-dor-estomago.html",
+        alt: "Dor de estômago"
+    },
+    {
+        img: "imgsintoma/dor no fígado.png",
+        link: "tratamentos/remedio-dor-figado.html",
+        alt: "Dor no fígado"
+    },
+    {
+        img: "imgsintoma/dor no ouvido.png",
+        link: "tratamentos/remedio-dor-ouvido.html",
+        alt: "Dor no ouvido"
+    },
+    {
+        img: "imgsintoma/dor no pé.png",
+        link: "tratamentos/remedio-dor-pe.html",
+        alt: "Dor no pé"
+    },
+    {
+        img: "imgsintoma/dorarticulacao.png",
+        link: "tratamentos/remedio-dor-articulacoes.html",
+        alt: "Dor nas articulações"
+    },
+    {
+        img: "imgsintoma/dorcoracao.png",
+        link: "tratamentos/remedio-dor-coracao.html",
+        alt: "Dor no coração"
+    },
+    {
+        img: "imgsintoma/dorcostas.png",
+        link: "tratamentos/remedio-dor-costas.html",
+        alt: "Dor nas costas"
+    },
+    {
+        img: "imgsintoma/dorgarganta.png",
+        link: "tratamentos/remedio-dor-garganta.html",
+        alt: "Dor de garganta"
+    },
+    {
+        img: "imgsintoma/dormuscular.png",
+        link: "tratamentos/remedio-dor-muscular.html",
+        alt: "Dor muscular"
+    },
+    {
+        img: "imgsintoma/dorouvido.png",
+        link: "tratamentos/remedio-dor-ouvido.html",
+        alt: "Dor no ouvido (alternativa)"
     }
 ];
 
