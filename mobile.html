@@ -365,7 +365,7 @@
     <!-- Conteúdo Mobile -->
     <div class="mobile-content">
         <!-- Barra de Pesquisa de Sintomas -->
-        <section class="mb-6">
+        <section class="mb-6" id="search-container">
             <div class="relative">
                 <div class="relative bg-white rounded-full shadow-lg border-2 border-verde-claro border-opacity-30 transition-all duration-300 hover:shadow-xl focus-within:shadow-xl focus-within:border-verde-escuro">
                     <input type="text" id="symptom-search" placeholder="Busque seu sintoma..." autocomplete="off" style="width: 100%; padding: 1rem 3rem 1rem 1.5rem; border: none; outline: none; background: transparent; font-size: 1rem; color: #424242; border-radius: 9999px;">
@@ -478,9 +478,9 @@
         const mobileCarouselImg = document.getElementById('mobile-carousel-image');
         
         function handleCarouselClick() {
-            // Se for a imagem buscasitoma.jpg, redireciona para sintomas
+            // Se for a imagem buscasitoma.jpg, redireciona para a barra de pesquisa
             if (mobileImages[currentMobileImage] === 'carrosel/buscasitoma.jpg') {
-                document.getElementById('sintomas-section').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('search-container').scrollIntoView({ behavior: 'smooth' });
             } else if (mobileImages[currentMobileImage] === 'carrosel/click.jpg') {
                 window.open('https://pay.kiwify.com.br/1KjTh1L', '_blank');
             }

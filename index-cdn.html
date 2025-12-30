@@ -253,18 +253,7 @@
     <div class="main-content">
 
     <!-- Barra de Pesquisa de Sintomas -->
-    <section class="max-w-6xl mx-auto mt-4 px-4">
-        <div class="max-w-2xl mx-auto relative">
-            <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-full shadow-lg border-2 border-verde-claro border-opacity-30 transition-all duration-300 hover:shadow-xl hover:border-verde-escuro focus-within:shadow-xl focus-within:border-verde-escuro focus-within:transform focus-within:-translate-y-1">
-                <input type="text" id="symptom-search" placeholder="Busque seu sintoma..." autocomplete="off" class="w-full py-4 px-6 pr-14 rounded-full border-none outline-none bg-transparent text-lg text-cinza-texto font-medium placeholder-gray-400 placeholder-opacity-60">
-                <i class="bi bi-search absolute right-6 top-1/2 transform -translate-y-1/2 text-verde-escuro text-xl transition-all duration-300"></i>
-            </div>
-            <div class="search-results absolute top-full left-0 right-0 bg-white rounded-2xl shadow-xl border-2 border-verde-claro border-opacity-20 max-h-80 overflow-y-auto z-50 mt-2 opacity-0 invisible transform -translate-y-2 transition-all duration-300" id="search-results"></div>
-        </div>
-    </section>
-
-    <!-- Barra de Pesquisa de Sintomas -->
-    <section class="max-w-6xl mx-auto mt-4 px-4">
+    <section class="max-w-6xl mx-auto mt-4 px-4" id="search-container">
         <div class="max-w-2xl mx-auto relative">
             <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-full shadow-lg border-2 border-verde-claro border-opacity-30 transition-all duration-300 hover:shadow-xl hover:border-verde-escuro focus-within:shadow-xl focus-within:border-verde-escuro focus-within:transform focus-within:-translate-y-1">
                 <input type="text" id="symptom-search" placeholder="Busque seu sintoma..." autocomplete="off" class="w-full py-4 px-6 pr-14 rounded-full border-none outline-none bg-transparent text-lg text-cinza-texto font-medium placeholder-gray-400 placeholder-opacity-60">
@@ -295,7 +284,7 @@
                     </div>
                 </div>
                 <div class="slide min-w-full relative">
-                    <a href="#sintomas-section">
+                    <a href="#search-container">
                         <img src="carrosel/buscasitoma.jpg" alt="Busca Sintoma" class="slide-image w-full h-96 object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-verde-escuro via-black/40 to-transparent text-white p-8 md:p-12 transform translate-y-full transition-transform duration-500 hover:translate-y-0">
                             <h3 class="text-white text-2xl md:text-3xl font-bold mb-3 text-shadow-strong font-poppins">Saúde Natural</h3>
