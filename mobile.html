@@ -478,9 +478,9 @@
         const mobileCarouselImg = document.getElementById('mobile-carousel-image');
         
         function handleCarouselClick() {
-            // Se for a imagem buscasitoma.jpg, redireciona para a barra de pesquisa
+            // Se for a imagem buscasitoma.jpg, redireciona para o carrossel de sintomas
             if (mobileImages[currentMobileImage] === 'carrosel/buscasitoma.jpg') {
-                document.getElementById('search-container').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('sintomas-section').scrollIntoView({ behavior: 'smooth' });
             } else if (mobileImages[currentMobileImage] === 'carrosel/click.jpg') {
                 window.open('https://pay.kiwify.com.br/1KjTh1L', '_blank');
             }
