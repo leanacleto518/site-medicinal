@@ -5,70 +5,70 @@ const symptomsDatabase = [
         keywords: ["cabeça", "cefaleia", "enxaqueca", "dor de cabeça", "migraine"],
         description: "Tratamento natural para dores de cabeça e enxaquecas",
         link: "tratamentos/remedio-dor-cabeca.html",
-        icon: "🤕"
+        icon: '<i class="bi bi-bandaid"></i>'
     },
     {
         name: "Dor Abdominal",
         keywords: ["abdominal", "barriga", "estômago", "abdomen", "dor de barriga", "dor de estômago"],
         description: "Alívio natural para dores abdominais e estomacais",
         link: "tratamentos/remedio-dor-abdominal.html",
-        icon: "🤰"
+        icon: '<i class="bi bi-person-standing"></i>'
     },
     {
         name: "Dor de Dente",
         keywords: ["dente", "dental", "dor de dente", "odontalgia", "molar"],
         description: "Tratamento natural para dores dentárias",
         link: "tratamentos/remedio-dor-no-dente.html",
-        icon: "🦷"
+        icon: '<i class="bi bi-emoji-smile"></i>'
     },
     {
         name: "Dor nos Olhos",
         keywords: ["olhos", "vista", "ocular", "dor nos olhos", "visão"],
         description: "Alívio natural para desconfortos oculares",
         link: "tratamentos/remedio-dor-nos-olhos.html",
-        icon: "👁️"
+        icon: '<i class="bi bi-eye"></i>'
     },
     {
         name: "Dor de Garganta",
         keywords: ["garganta", "pescoço", "dor de garganta", "faringite", "amigdalite"],
         description: "Tratamento natural para dores de garganta",
         link: "tratamentos/remedio-dor-garganta.html",
-        icon: "🗣️"
+        icon: '<i class="bi bi-chat-dots"></i>'
     },
     {
         name: "Dor Muscular",
         keywords: ["muscular", "músculo", "dor muscular", "mialgia", "contusão"],
         description: "Alívio natural para dores musculares",
         link: "tratamentos/remedio-dor-muscular.html",
-        icon: "💪"
+        icon: '<i class="bi bi-lightning"></i>'
     },
     {
         name: "Dor nas Articulações",
         keywords: ["articulações", "juntas", "artrite", "dor nas juntas", "reumatismo"],
         description: "Tratamento natural para dores articulares",
         link: "tratamentos/remedio-dor-articulacoes.html",
-        icon: "🦴"
+        icon: '<i class="bi bi-diagram-3"></i>'
     },
     {
         name: "Dor nas Costas",
         keywords: ["costas", "coluna", "lombar", "dor nas costas", "lombalgia"],
         description: "Alívio natural para dores nas costas",
         link: "tratamentos/remedio-dor-costas.html",
-        icon: "🏃"
+        icon: '<i class="bi bi-person-walking"></i>'
     },
     {
         name: "Dor no Coração",
         keywords: ["coração", "peito", "cardíaco", "dor no peito", "angina"],
         description: "Cuidados naturais para desconfortos cardíacos",
         link: "tratamentos/remedio-dor-coracao.html",
-        icon: "❤️"
+        icon: '<i class="bi bi-heart"></i>'
     },
     {
         name: "Dor no Ouvido",
         keywords: ["ouvido", "orelha", "dor de ouvido", "otite", "auricular"],
         description: "Tratamento natural para dores de ouvido",
         link: "tratamentos/remedio-dor-ouvido.html",
-        icon: "👂"
+        icon: '<i class="bi bi-soundwave"></i>'
     }
 ];
 
