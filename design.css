@@ -695,6 +695,7 @@ main p {
         transparent 70%
     );
     animation: float 8s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .destaque-section::after {
@@ -705,6 +706,7 @@ main p {
     font-size: 1.5rem;
     opacity: 0.3;
     animation: fruitFloat 6s ease-in-out infinite;
+    pointer-events: none;
 }
 
 @keyframes float {
@@ -1044,6 +1046,8 @@ section ul li strong {
     text-decoration: none;
     display: inline-block;
     box-shadow: 0 3px 12px var(--sombra);
+    position: relative;
+    z-index: 10;
 }
 
 .btn-primary:hover {
