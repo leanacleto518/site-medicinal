@@ -277,7 +277,7 @@ function initializeCarrossel() {
     }
 
     function startCarrosselAutoPlay() {
-        carrosselInterval = setInterval(nextSlide, 6000); // 6 segundos como solicitado
+        carrosselInterval = setInterval(nextSlide, 4000); // 4 segundos como solicitado
     }
 
     function stopCarrosselAutoPlay() {
