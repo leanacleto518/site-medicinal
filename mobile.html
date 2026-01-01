@@ -377,7 +377,7 @@
 
         <!-- Carrossel Mobile -->
         <div class="mobile-carousel">
-            <img src="carrosel/click.jpg" alt="Conheça nosso livro - Clique aqui" id="mobile-carousel-image" onclick="handleCarouselClick()">
+            <img src="carrosel/click.jpeg" alt="Conheça nosso livro - Clique aqui" id="mobile-carousel-image" onclick="handleCarouselClick()">
         </div>
 
         <!-- Seção de Destaque -->
@@ -467,7 +467,7 @@
 
         // Carrossel simples para mobile
         const mobileImages = [
-            'carrosel/click.jpg',
+            'carrosel/click.jpeg',
             'carrosel/aviso.jpeg',
             'carrosel/buscasitoma.jpg',
             'carrosel/dietabalanceada.jpeg',
@@ -481,7 +481,7 @@
             // Se for a imagem buscasitoma.jpg, redireciona para o carrossel de sintomas
             if (mobileImages[currentMobileImage] === 'carrosel/buscasitoma.jpg') {
                 document.getElementById('sintomas-section').scrollIntoView({ behavior: 'smooth' });
-            } else if (mobileImages[currentMobileImage] === 'carrosel/click.jpg') {
+            } else if (mobileImages[currentMobileImage] === 'carrosel/click.jpeg') {
                 window.open('https://pay.kiwify.com.br/1KjTh1L', '_blank');
             }
         }
